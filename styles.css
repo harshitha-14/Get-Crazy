@@ -1,0 +1,315 @@
+/* Read Me:
+	Designed by: M. Ganga Bhavani; P. Srujana; K. Sri Harshitha. 
+
+	Elements to add in HTML page:
+	(Add the following lines inside <head></head>)
+	
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	*/
+
+/*DARK 2*/
+
+
+html{
+	/*background-color: #212121;*/
+	color: #0d7377;*/
+	font-weight: 3px;
+	scroll-behavior: smooth;
+	font-family: 'Roboto Condensed', sans-serif;
+  background:linear-gradient(120deg,#1D89F4, #00DB78, #F7BF18, #d33131);
+}
+
+@viewport{
+	zoom: 1.0;
+	width: extend-to-zoom;
+
+}
+
+@-ms-viewport{
+	zoom: 1.0;
+	width: extend-to-zoom;
+}
+
+div{
+	border-radius: 15px;
+	margin: 3%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	/*background-color: #292929;*/
+	/*background-color: white;*/
+	padding: 1%;
+}
+
+div.no{
+  margin: 0%;
+  padding: 0%;
+  border-radius: 0%;
+  box-shadow: none;
+}
+
+div.a{
+	border-radius: 15px;
+	margin: 1%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: white;*/
+	padding: 1%;
+
+}
+
+h1{
+	color: #0f7cd6;
+}
+
+tr{
+  min-width: 50%;
+  text-align: center;
+}
+
+button{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	/*border: 2px solid #14ffec;
+	color: #14ffec;*/
+	border: 2px solid black;
+	color: black;
+	background-color: transparent;
+	text-align: center;
+	display: inline-block;
+	border-radius: 4px;
+	width: auto;
+	height: auto;
+	padding: 8px 8px;
+	font-size: 20px;
+	margin: 4px 2px;
+  	transition-duration: 0.4s;
+  	cursor: pointer;
+  	min-width: 45%;
+
+}
+
+button:hover{
+	/*background-color: #14ffec;
+	color: #121212;
+	border-color: #14ffec;*/
+	background-color: black;
+	color: white;
+	border-color: black;
+}
+
+hr{
+	border-color: #14ffec;
+}
+
+footer{
+	background-color: #090909;
+	border-radius: 15px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  border-radius: 15px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #0d7377;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 23%;
+  padding: 1%;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Create two equal columns that floats next to each other */
+.column2 {
+  float: left;
+  width: 48%;
+  padding: 1%;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column2 {
+    width: 100%;
+  }
+}
+
+
+
+
+@keyframes slider
+{
+    0%{
+        left:0;
+    }
+    20%{
+        left:0;
+    }
+    25%{
+        left:-100%;
+    }
+    45%{
+        left:-100%;
+    }
+    50%{
+        left:-200%;
+    }
+    70%{
+        left:-200%;
+    }
+    75%{
+        left:-300%;
+    }
+    95%{
+        left:-300%;
+    }
+    100%{
+        left:-400%;
+    }
+}
+
+#slider
+{
+    overflow: hidden;
+}
+#slider figure img
+{
+    width: 20%;
+    float: left;
+}
+#slider figure
+{
+    position: relative;
+    width: 500%;
+    height: 100%;
+    margin: 0;
+    left: 0;
+    animation: 15s slider infinite;
+}
+
+a{
+	text-decoration: none;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+div.b{
+  border-radius: 10px;
+  margin: 2%;
+  padding: 2%;
+}
+
+hr.dashed {
+  border-top: 1px dashed;
+}
+
+button.but{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  /*border: 2px solid #14ffec;
+  color: #14ffec;*/
+  border: 2px solid black;
+  color: black;
+  background-color: transparent;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+  width: auto;
+  height: auto;
+  padding: 8px 8px;
+  font-size: 20px;
+  margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    min-width: 45%;
+
+}
+
+button.but:hover{
+  /*background-color: #14ffec;
+  color: #121212;
+  border-color: #14ffec;*/
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+
+img.s1{
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;  
+  transition: transform .2s;
+}
+img.s1:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(2.0); 
+  box-shadow: 3px 3px 100px black;
+}
